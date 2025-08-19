@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Práctico 2 – Posicionamiento</title>
+  <link rel="stylesheet" href="practico2.css" />
+</head>
+<body>
+
+  <h1>Ejemplo de Posicionamiento</h1>
+
+  <!-- STICKY: se “pega” al top cuando hacemos scroll -->
+  <div class="box sticky">Sticky</div>
+
+  <!-- Escenario principal -->
+  <div class="stage">
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+
+    <!-- El contenedor .stage es relative, así que este se referencia a él -->
+    <div class="box absolute">Absolute</div>
+  </div>
+
+  <!-- Relleno para que haya scroll y puedas ver sticky/fixed trabajando -->
+  <div class="spacer"></div>
+
+  <!-- FIXED: siempre en la esquina de la ventana -->
+  <div class="box fixed">Fixed</div>
+</body>
+</html>
